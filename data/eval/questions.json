@@ -1,0 +1,545 @@
+[
+  {
+    "id": "num-01",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "What were Apple's total net sales in fiscal year 2025?",
+    "expected_value": 416161000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-02",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "What was Apple's net income in fiscal year 2025?",
+    "expected_value": 112010000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetIncomeLoss",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-03",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "What was Apple's operating income in fiscal year 2025?",
+    "expected_value": 133050000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-04",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "How much did Apple spend on research and development in fiscal year 2025?",
+    "expected_value": 34550000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:ResearchAndDevelopmentExpense",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-05",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "What were Apple's total assets as of September 27, 2025?",
+    "expected_value": 359241000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:Assets",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-06",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "How much cash did Apple generate from operating activities in fiscal year 2025?",
+    "expected_value": 111482000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-07",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "What was Apple's diluted earnings per share in fiscal year 2025?",
+    "expected_value": 7.46,
+    "unit": "USD/shares",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:EarningsPerShareDiluted",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-08",
+    "category": "numeric",
+    "ticker": "AAPL",
+    "question": "How much did Apple spend repurchasing its common stock in fiscal year 2025?",
+    "expected_value": 90711000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+      "period_end": "2025-09-27",
+      "accession": "0000320193-25-000079"
+    }
+  },
+  {
+    "id": "num-09",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "What was Microsoft's total revenue in fiscal year 2026?",
+    "expected_value": 331839000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-10",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "What was Microsoft's net income in fiscal year 2026?",
+    "expected_value": 133749000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetIncomeLoss",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-11",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "What was Microsoft's operating income in fiscal year 2026?",
+    "expected_value": 155237000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-12",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+    "expected_value": 35562000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:ResearchAndDevelopmentExpense",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-13",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "What were Microsoft's total assets as of June 30, 2026?",
+    "expected_value": 758376000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:Assets",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-14",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "How much cash did Microsoft generate from operating activities in fiscal year 2026?",
+    "expected_value": 182935000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-15",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "How much did Microsoft spend on additions to property and equipment in fiscal year 2026?",
+    "expected_value": 115948000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-16",
+    "category": "numeric",
+    "ticker": "MSFT",
+    "question": "What was Microsoft's diluted earnings per share in fiscal year 2026?",
+    "expected_value": 17.95,
+    "unit": "USD/shares",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:EarningsPerShareDiluted",
+      "period_end": "2026-06-30",
+      "accession": "0001193125-26-323660"
+    }
+  },
+  {
+    "id": "num-17",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "What were Tesla's total revenues in 2025?",
+    "expected_value": 94827000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:Revenues",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-18",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "What was Tesla's net income attributable to common stockholders in 2025?",
+    "expected_value": 3794000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetIncomeLoss",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-19",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "What was Tesla's income from operations in 2025?",
+    "expected_value": 4355000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:OperatingIncomeLoss",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-20",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "How much did Tesla spend on research and development in 2025?",
+    "expected_value": 6411000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:ResearchAndDevelopmentExpense",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-21",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "What were Tesla's total assets as of December 31, 2025?",
+    "expected_value": 137806000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:Assets",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-22",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "How much cash and cash equivalents did Tesla have as of December 31, 2025?",
+    "expected_value": 16513000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-23",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "How much cash did Tesla generate from operating activities in 2025?",
+    "expected_value": 14747000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-24",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "How much did Tesla spend to acquire property and equipment in 2025?",
+    "expected_value": 8527000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "num-25",
+    "category": "numeric",
+    "ticker": "TSLA",
+    "question": "What was Tesla's total gross profit in 2025?",
+    "expected_value": 17094000000,
+    "unit": "USD",
+    "source": {
+      "api": "data.sec.gov companyfacts",
+      "concept": "us-gaap:GrossProfit",
+      "period_end": "2025-12-31",
+      "accession": "0001628280-26-003952"
+    }
+  },
+  {
+    "id": "txt-01",
+    "category": "text",
+    "ticker": "AAPL",
+    "question": "Where is Apple's headquarters located?",
+    "reference_answer": "Cupertino, California.",
+    "key_facts": [
+      [
+        "cupertino"
+      ]
+    ]
+  },
+  {
+    "id": "txt-02",
+    "category": "text",
+    "ticker": "AAPL",
+    "question": "How does Apple define its fiscal year?",
+    "reference_answer": "A 52- or 53-week period that ends on the last Saturday of September.",
+    "key_facts": [
+      [
+        "last saturday"
+      ],
+      [
+        "september"
+      ]
+    ]
+  },
+  {
+    "id": "txt-03",
+    "category": "text",
+    "ticker": "AAPL",
+    "question": "What kinds of products does Apple design, manufacture and market?",
+    "reference_answer": "Smartphones, personal computers, tablets, wearables and accessories, plus related services.",
+    "key_facts": [
+      [
+        "smartphone",
+        "iphone"
+      ],
+      [
+        "computer",
+        "mac"
+      ],
+      [
+        "tablet",
+        "ipad"
+      ],
+      [
+        "wearable"
+      ]
+    ]
+  },
+  {
+    "id": "txt-04",
+    "category": "text",
+    "ticker": "MSFT",
+    "question": "What are Microsoft's three reportable segments?",
+    "reference_answer": "Productivity and Business Processes, Intelligent Cloud, and More Personal Computing.",
+    "key_facts": [
+      [
+        "productivity and business processes"
+      ],
+      [
+        "intelligent cloud"
+      ],
+      [
+        "more personal computing"
+      ]
+    ]
+  },
+  {
+    "id": "txt-05",
+    "category": "text",
+    "ticker": "MSFT",
+    "question": "What is Microsoft's mission?",
+    "reference_answer": "To empower every person and every organization on the planet to achieve more.",
+    "key_facts": [
+      [
+        "empower every person"
+      ],
+      [
+        "every organization"
+      ],
+      [
+        "achieve more"
+      ]
+    ]
+  },
+  {
+    "id": "txt-06",
+    "category": "text",
+    "ticker": "MSFT",
+    "question": "About how many people did Microsoft employ full-time as of June 30, 2026?",
+    "reference_answer": "Approximately 223,000 people.",
+    "key_facts": [
+      [
+        "223,000",
+        "223000",
+        "223 thousand"
+      ]
+    ]
+  },
+  {
+    "id": "txt-07",
+    "category": "text",
+    "ticker": "TSLA",
+    "question": "What are Tesla's two reportable segments?",
+    "reference_answer": "Automotive, and energy generation and storage.",
+    "key_facts": [
+      [
+        "automotive"
+      ],
+      [
+        "energy generation and storage"
+      ]
+    ]
+  },
+  {
+    "id": "txt-08",
+    "category": "text",
+    "ticker": "TSLA",
+    "question": "In which city and state is Tesla's principal executive office?",
+    "reference_answer": "Austin, Texas.",
+    "key_facts": [
+      [
+        "austin"
+      ],
+      [
+        "texas"
+      ]
+    ]
+  },
+  {
+    "id": "txt-09",
+    "category": "text",
+    "ticker": "TSLA",
+    "question": "Which energy storage products does Tesla name in its annual report?",
+    "reference_answer": "Megapack and Powerwall.",
+    "key_facts": [
+      [
+        "megapack"
+      ],
+      [
+        "powerwall"
+      ]
+    ]
+  },
+  {
+    "id": "txt-10",
+    "category": "text",
+    "ticker": "TSLA",
+    "question": "On which stock exchange is Tesla's common stock listed?",
+    "reference_answer": "The Nasdaq Global Select Market.",
+    "key_facts": [
+      [
+        "nasdaq"
+      ]
+    ]
+  },
+  {
+    "id": "unans-01",
+    "category": "unanswerable",
+    "ticker": "TSLA",
+    "question": "What is Tesla's stock price today?",
+    "why_unanswerable": "Not in the reports; a 10-K does not contain today's price."
+  },
+  {
+    "id": "unans-02",
+    "category": "unanswerable",
+    "ticker": "MSFT",
+    "question": "What will Microsoft's revenue be in fiscal year 2030?",
+    "why_unanswerable": "Not in the reports; they do not forecast that far ahead."
+  },
+  {
+    "id": "unans-03",
+    "category": "unanswerable",
+    "ticker": null,
+    "question": "What were Amazon's total net sales in 2025?",
+    "why_unanswerable": "Amazon's report is not in the corpus."
+  },
+  {
+    "id": "unans-04",
+    "category": "unanswerable",
+    "ticker": "AAPL",
+    "question": "How many iPhone units did Apple sell in fiscal year 2025?",
+    "why_unanswerable": "Apple does not report unit sales."
+  },
+  {
+    "id": "unans-05",
+    "category": "unanswerable",
+    "ticker": "MSFT",
+    "question": "What was the total compensation of Microsoft's chief executive officer in fiscal year 2026?",
+    "why_unanswerable": "Executive pay is in the proxy statement, not in the 10-K."
+  }
+]

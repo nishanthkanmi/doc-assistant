@@ -1,0 +1,63 @@
+# Every setting for the document assistant lives in this file.
+# Paths are relative to this file's folder.
+#
+# Each of the four components below has a "type": the name of a built-in
+# (see the Architecture section of the README) or "module.path:ClassName" for
+# your own. Change the type to swap that part of the pipeline.
+
+documents:
+  folder: data/raw        # the source documents to run the pipeline on
+  workspace: data         # derived files go here: clean/, chunks/, index/, eval/
+
+cleaner:                  # turns each source file into plain text
+  type: html              # built-ins: html (.html/.htm), text (.txt/.md)
+
+chunker:                  # splits plain text into searchable pieces
+  type: sec_filing        # built-ins: sec_filing (10-K sections and tables), paragraph (any text)
+  max_chars: 1500         # longest chunk, in characters (about 350 words)
+
+retriever:                # builds the search index and finds chunks for a question
+  type: ollama_embeddings # built-ins: ollama_embeddings (meaning-based), tfidf (word-based)
+  embedding_model: nomic-embed-text
+  # nomic-embed-text wants these labels in front of what it embeds.
+  # Other embedding models may want different ones, or "" for none.
+  document_prefix: "search_document: "
+  query_prefix: "search_query: "
+  batch_size: 32          # chunks sent to Ollama per request
+  top_k: 5                # how many chunks to give the language model per question
+
+language_model:           # writes the answer from the retrieved chunks
+  type: ollama            # built-in: ollama
+  name: llama3.2
+  context_tokens: 8192    # how much text the model can read at once
+  temperature: 0          # 0 = least random, which suits factual questions
+
+abstention:
+  # If even the best chunk scores below this (0 to 1) the pipeline answers
+  # "I don't know" without asking the language model. Raise it to refuse more
+  # often, lower it to refuse less; 0 turns the check off. Scores depend on the
+  # retriever: with ollama_embeddings they run 0.75 to 0.89 for this corpus, so
+  # a high value would also refuse real questions. A different retriever (such
+  # as tfidf) uses a different scale and needs its own value.
+  min_score: 0.76
+  message: "I don't know. The filings do not appear to contain anything relevant to that question."
+
+answering:
+  system_prompt: |-
+    You answer questions about company annual reports (10-K filings).
+    Use ONLY the numbered sources the user gives you. Rules:
+    - Cite the sources you used in square brackets, like [1] or [2][3].
+    - Give numbers exactly as written in the sources, with their units (for example "$416,161 million").
+    - If the sources do not contain the answer, say "I could not find that in the sources." Do not guess.
+    - Keep the answer short.
+
+evaluation:
+  questions_file: data/eval/questions.json
+  numeric_tolerance: 0.005  # a number is correct if within 0.5% of the reference value
+
+ollama:
+  url: http://localhost:11434   # Ollama's local HTTP API (used by the ollama components)
+
+download:                 # used only by src/download_filings.py
+  tickers: [AAPL, MSFT, TSLA]
+  pause_seconds: 0.5      # stay well under the SEC's request-rate limit

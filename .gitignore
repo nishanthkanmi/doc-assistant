@@ -1,0 +1,39 @@
+# ---- Secrets and personal settings (none exist today; this keeps it that way) ----
+.env
+.env.*
+*.pem
+*.key
+secrets*
+credentials*
+
+# ---- Installers and model files: large, not part of the project ----
+*.exe
+*.msi
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+
+# ---- Downloaded and generated data: rebuild with the commands in the README ----
+# (data/eval/ is NOT ignored: the 40-question test set and the latest results are small and worth sharing)
+data/raw/
+data/clean/
+data/chunks/
+data/index/
+
+# ---- Private study notes (contains local paths with the Windows username) ----
+Project_Guide.md
+
+# ---- Python caches and virtual environments ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ---- Editor and operating-system files ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
